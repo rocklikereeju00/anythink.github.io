@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% block title %}     <title>Document</title> {% endblock title %}
+</head>
+
+<body class="yel">
+    <nav class="navbar navbar-expand-lg gr navbar-light py-4">
+{% block active %}
+      
+{% endblock active %}
+        </div>
+    </nav>
+
+    <div class="slide">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/img/nandhu-kumar-fg5k00uT0TU-unsplash.jpg"  class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/noah-buscher-G0m9kKvkkB8-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/guru-moorthy-gokul--tdqorDOxgc-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+{% block conntent %}
+
+{% endblock conntent %}
+    <footer class="bd-footer py-5 mt-5 cl-w ">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-1 mb-3">
+
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Home</a></li>
+                        <li class="mb-2"><a href="#">Docs</a></li>
+                        <li class="mb-2"><a href="#">Examples</a></li>
+                        <li class="mb-2"><a href="#">Themes</a></li>
+                        <li class="mb-2"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Guides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Getting started</a></li>
+                        <li class="mb-2"><a href="#">Starter template</a></li>
+                        <li class="mb-2"><a href="#">Webpack</a></li>
+                        <li class="mb-2"><a href="#">Parcel</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Projects</h5>
+                    <ul class="list-unstyled">
+
+                        <li class="mb-2"><a href="#">Icons</a></li>
+                        <li class="mb-2"><a href="#">RFS</a></li>
+                        <li class="mb-2"><a href="#">npm starter</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Community</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Issues</a></li>
+                        <li class="mb-2"><a href="#">Discussions</a></li>
+                        <li class="mb-2"><a href="#">Corporate sponsors</a></li>
+                        <li class="mb-2"><a href="#">Open Collective</a></li>
+                        <li class="mb-2"><a href="#">Slack</a></li>
+                        <li class="mb-2"><a href="#">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/static/app.js"></script>
+
+</html>

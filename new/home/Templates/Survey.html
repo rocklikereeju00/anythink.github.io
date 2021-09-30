@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+ {% block title %}   <title>KrishiKhoj</title>{% endblock title %}
+ 
+
+ {% block active %}
+      
+
+  <div class="container-fluid">
+            <a class="navbar-brand fs-2 logo" href="/">
+                <h1><strong>KrishiKhoj</strong></h1>
+            </a>
+            <button class="navbar-toggler cl-yel" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon cl-yel"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item fs-3 px-4 m-3 cl-yel ">
+                        <a class="nav-link   cl-yel " aria-current="page"
+                            href="/"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item fs-3 px-4 m-3">
+                        <a class="nav-link active shadow rounded  px-4" href="Survey"><strong>Survey
+                                list</strong></a>
+                    </li>
+                </ul>
+            </div>
+
+{% endblock active %}
+
+{% block conntent %}
+<br>
+<div class="submt p-4 m-4 shadow-lg tbl cl-b rounded ">
+<table class="table tbl p-4" >
+  <thead>
+    <tr >
+      <th  scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">address</th>
+      <th scope="col">address2</th>
+      <th scope="col">Village/City</th>
+      <th scope="col">State</th>
+      <th scope="col">Machine</th>
+      <th scope="col">Zip</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for showdata in data %}
+    <tr>
+      <td>{{showdata.name}}</td>
+      <td>{{showdata.email}}</td>
+      <td>{{showdata.phone}}</td>
+      <td>{{showdata.address}}</td>
+      <td>{{showdata.address2}}</td>
+      <td>{{showdata.City_Village}}</td>
+      <td>{{showdata.dic}}</td>
+      <td>{{showdata.atta}}</td>
+      <td>{{showdata.zip}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock conntent %}
